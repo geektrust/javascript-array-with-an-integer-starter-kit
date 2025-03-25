@@ -1,17 +1,4 @@
-/**
- *
- * @param {any[]} arr - a sequence of elements (can be integers, strings, or other types)
- * @param {any} n - a number or a target element (based on problem context)
- * @returns {} - the output based on the problem logic
- *
- * This function will be called by our system.
- * So fill in your code inside this function.
- *
- */
-function handle(arr, n) {
-  // WRITE YOUR CODE HERE....
-  return arr; // Modify this return based on your problem's requirements.
-}
+const handle = require('./solution');
 
 /*
  * **************************************************************************************
@@ -21,10 +8,9 @@ function handle(arr, n) {
  */
 function main() {
   const input = process.argv.slice(2);
-  const [arrStr, nStr] = input.split(" | ");
+  const [arrStr, nStr] = input[0].split(" | ");
   const arr = arrStr.split(", ").map((num) => parseInt(num.trim()));
   const n = parseInt(nStr.trim());
-
   const output = handle(arr, n);
   console.log(JSON.stringify(output));
 }
