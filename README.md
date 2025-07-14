@@ -12,6 +12,6 @@ This is a skeleton project structure for the rotate the integer array which will
 ## Running the project
 
 - To run, issue the command `node . '<input>'` where  **input** is a valid input given in the problem statement.
-- For example: `node . '["10", "20", "30", "40", "50"]' '90'`
+- For example: `node . '["3, 2, 4 | 6"]'`
 
 Note: Each full command should be wrapped in single quotes.

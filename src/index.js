@@ -21,7 +21,7 @@ function handle(arr, n) {
  */
 function main() {
   const input = process.argv.slice(2);
-  const [arrStr, nStr] = input.split(" | ");
+  const [arrStr, nStr] = input[0].split(" | ");
   const arr = arrStr.split(", ").map((num) => parseInt(num.trim()));
   const n = parseInt(nStr.trim());
 
